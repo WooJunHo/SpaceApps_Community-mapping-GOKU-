@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sea Level</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+   
+    <h1>select decade</h1>
+    <select id="imageSelector">
+        <option value="../image/year_2030_return_level_1_ssp3rcp70_p50_contiguous_ipcc_2021_med.jpeg">2030</option>
+        <option value="../image/year_2040_return_level_1_ssp3rcp70_p50_contiguous_ipcc_2021_med.jpeg">2040</option>
+        <option value="../image/year_2050_return_level_1_ssp3rcp70_p50_contiguous_ipcc_2021_med.jpeg">2050</option>
+        <option value="../image/year_2060_return_level_1_ssp3rcp70_p50_contiguous_ipcc_2021_med.jpeg">2060</option>
+        <option value="../image/year_2070_return_level_1_ssp3rcp70_p50_contiguous_ipcc_2021_med.jpeg">2070</option>
+        <option value="../image/year_2080_return_level_1_ssp3rcp70_p50_contiguous_ipcc_2021_med.jpeg">2080</option>
+        <option value="../image/year_2090_return_level_1_ssp3rcp70_p50_contiguous_ipcc_2021_med.jpeg">2090</option>
+        <option value="../image/year_2100_return_level_1_ssp3rcp70_p50_contiguous_ipcc_2021_med.jpeg">2100</option>
+        <option value="../image/year_2110_return_level_1_ssp3rcp70_p50_contiguous_ipcc_2021_med.jpeg">2110</option>
+        <option value="../image/year_2120_return_level_1_ssp3rcp70_p50_contiguous_ipcc_2021_med.jpeg">2120</option>
+        <option value="../image/year_2130_return_level_1_ssp3rcp70_p50_contiguous_ipcc_2021_med.jpeg">2130</option>
+        <option value="../image/year_2140_return_level_1_ssp3rcp70_p50_contiguous_ipcc_2021_med.jpeg">2140</option>
+        <option value="../image/year_2150_return_level_1_ssp3rcp70_p50_contiguous_ipcc_2021_med.jpeg">2150</option>
+    </select>
+    <body>
+        <p>수몰지역 : 
+    <input type="text" id="inputText" placeholder="여기에 입력하세요">
+
+    <button id="submitButton">입력</button>
+</p>
+    
+    <div id="output"></div>
+   <p>
+    지도 출처 :<a href="http://sealevel.climatecentral.org/">http://sealevel.climatecentral.org/</a> </p>
+    <a href="https://www.freepik.com/free-vector/sticker-mangrove-tree-white-background_18055793.htm#query=mangrove%20tree&position=18&from_view=keyword&track=ais_hybrid&uuid=b16876e8-0a5a-4296-b46d-9ffb9694d63f">Image by brgfx</a> on Freepik
+    </body>
+    <div id="container">
+        <img id="displayImage" src="../image/year_2030_return_level_1_ssp3rcp70_p50_contiguous_ipcc_2021_med.jpeg" alt="Selected Image">
+        <img id="arrow_1" src="../image/arrow_1.png" alt="arrow_1">
+        <img id="arrow_2" src="../image/arrow_2.png" alt="arrow_2">
+        <img id="mangrove_1" src="../image/926i_6xa3_210609.png" alt="mangrove_1">z
+        <img id="mangrove_2" src="../image/926i_6xa3_210609.png" alt="mangrove_2">
+        <div class="tooltip" id="mangrovetooltip">
+        맹그로브 숲 조성효과 (출처 : ChatGPT)
+        탄소 저장: 
+        맹그로브는 탄소를 효과적으로 저장하여 온실가스 배출을 줄이는 데 기여합니다.
+        해안 방어: 
+        파도와 해일로부터 해안을 보호하여 침식을 줄이고 자연 재해로부터 인근 지역을 방어합니다.
+        수질 정화: 
+        물속의 오염물질과 영양분을 흡수하여 수질을 개선합니다.</div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
